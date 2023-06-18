@@ -23,7 +23,7 @@ To use the script, follow these steps:
    - Modify the `conf` dictionary to define the file extensions and their corresponding folder names. For example:
    
 ```toml
-   [files]
+[files]
 exclude = []
 
 
