@@ -64,5 +64,3 @@ txt = "/data/data/com.termux/files/home/code/python/delete_files/cloud/text"
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Feel free to modify the README as needed, including adding installation instructions or any additional information about the project.
