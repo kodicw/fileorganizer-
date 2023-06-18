@@ -1,0 +1,14 @@
+[files]
+exclude = [
+
+]
+directrorys_to_monitor = [
+"/data/data/com.termux/files/home/code/python/delete_files",
+"/data/data/com.termux/files/home/",
+"/data/data/com.termux/files/home/code/python/delete_files/cloud"
+]
+
+[organize]
+stl = "/data/data/com.termux/files/home/code/python/delete_files/cloud/3d_print"
+py = "/data/data/com.termux/files/home/code/python/delete_files/cloud/python"
+txt = "/data/data/com.termux/files/home/code/python/delete_files/cloud/text"
