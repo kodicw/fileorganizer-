@@ -6,7 +6,7 @@ This script is designed to organize files in a directory based on their file ext
 
 Before running the script, ensure you have the following installed:
 
-- Python (version 3.5 or above)
+- Python (version 3.10 or above)
 - Required dependencies (e.g., `re`, `os`)
 
 ## Getting Started
