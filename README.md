@@ -24,21 +24,20 @@ To use the script, follow these steps:
    
 ```toml
    [files]
-exclude = [
+exclude = []
 
-]
+
 directrorys_to_monitor = [
-"/data/data/com.termux/files/home/code/python/delete_files",
-"/data/data/com.termux/files/home/",
-"/data/data/com.termux/files/home/code/python/delete_files/cloud"
+"/home/code/python/delete_files",
+"/home/"
 ]
 
 [organize]
-stl = "/data/data/com.termux/files/home/code/python/delete_files/cloud/3d_print"
-py = "/data/data/com.termux/files/home/code/python/delete_files/cloud/python"
-txt = "/data/data/com.termux/files/home/code/python/delete_files/cloud/text"
-
+stl = "/home/3d"
+py = "/home/python"
+txt = "/home/text"
 ```
+This example will scan for stl, py, and txt file extensions and organize them into 3d, python, and text folders.
    
 2. Run the script:
    - In the terminal or command prompt, run the following command:
