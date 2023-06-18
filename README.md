@@ -22,7 +22,7 @@ To use the script, follow these steps:
    - Open the script file (`conf.toml`) in a text editor.
    - Modify the `conf` dictionary to define the file extensions and their corresponding folder names. For example:
    
-   ```toml
+```toml
    [files]
 exclude = [
 
@@ -37,7 +37,8 @@ directrorys_to_monitor = [
 stl = "/data/data/com.termux/files/home/code/python/delete_files/cloud/3d_print"
 py = "/data/data/com.termux/files/home/code/python/delete_files/cloud/python"
 txt = "/data/data/com.termux/files/home/code/python/delete_files/cloud/text"
-   ```
+
+```
    
 2. Run the script:
    - In the terminal or command prompt, run the following command:
