@@ -35,10 +35,13 @@ def is_excluded_file(exclude_list, file_list):
 def organize_files(file_exts: list, conf: dict):
     for dir in conf["files"]["directrorys_to_monitor"]:
         try:
-            os.chdir(dir)
+            if os.path.exists(dir):
+                os.chdir(dir)
+            else:
+                os.makedirs(dir)
+                os.chdir(dir)
         except Exception as e:
-            print(f"was unable to change into this directory {dir}")
-            raise e
+            print(f"was unable to change into this directory {dir}{e}")
         cwd = os.getcwd()
         list_o_files = os.listdir()
         if len(list_o_files) == 0: continue
@@ -46,14 +49,13 @@ def organize_files(file_exts: list, conf: dict):
             pattern = re.compile(f"[A-Za-z0-9]+\.{ext}")
             new_file_name = conf['organize'][ext]
             for file in list_o_files:
-                if is_excluded_file(EXCLUDE, list_o_files): continue
-                if pattern.match(file):
+                if is_excluded_file(EXCLUDE, list_o_files):
+                    continue
+                elif pattern.match(file):
                     if os.path.exists(new_file_name):
                         print("file exists")
                     else:
-                        os.mkdir(new_file_name)
+                        os.makedirs(new_file_name)
                     os.rename(f"{cwd}/{file}", f"{new_file_name}/{file}")
-            
-
 if __name__ == "__main__":
     main()
